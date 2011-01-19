@@ -1,0 +1,57 @@
+#import "RatPoly.h"
+
+
+@implementation RatPoly
+
+@synthesize terms;
+
+//note that since there is no such member attribute called "degree" in our class,
+//the compiler won't synthesize the "getter" for "degree". we have to write our own
+//getter
+-(int)degree{
+	//i'm just a skeleton here, do fill me up please, or
+	//I'll throw an exception to remind you of my existence. muahaha
+	[NSException raise:@"RatPoly degree not implemented" format:@"fill me up plz!"];
+}
+
+//check that the representation invariant is satisfied
+-(void)checkRep{
+	//i'm just a skeleton here, do fill me up please, or
+	//I'll throw an exception to remind you of my existence. muahaha
+	[NSException raise:@"RatPoly checkRep not implemented" format:@"fill me up plz!"];
+}
+
+@end
+
+
+/* answer for problem 0 */
+/*
+
+
+
+
+*/
+
+/* answer for problem 1 */
+/*
+
+
+
+
+*/
+
+/* answer for problem 2 */
+/*
+ 
+ 
+ 
+ 
+ */
+
+/* answer for problem 3 */
+/*
+ 
+ 
+ 
+ 
+ */

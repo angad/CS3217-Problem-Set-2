@@ -1,0 +1,48 @@
+#import "RatTerm.h"
+
+
+@implementation RatTerm
+
+@synthesize coeff;
+@synthesize expt;
+
+//check that the representation invariant holds (if any).
+//you need to fill in the implementation of this method
+-(void) checkRep{
+	if (coeff == nil) {
+		[NSException raise:@"ratterm representation error" format:@"coefficient is nil"];
+	}
+	if ([coeff isEqual:[RatNum initZERO]] && expt != 0) {
+		[NSException raise:@"ratterm representation error" format:@"coeff is zero but expt is not"];
+	}
+}
+
+-(id)initWithCoeff:(RatNum*)c Exp:(int)e{
+	RatNum *ZERO = [RatNum initZERO];
+	//if coefficient is 0, exponent must also be 0
+	//we'd like to keep the coefficient, so we must retain it
+	if ([c isEqual:ZERO]) {
+		coeff = [ZERO retain];
+		expt = 0;
+	} else {
+		coeff = [c retain];
+		expt = e;
+	}
+	[self checkRep];
+	return self;
+}
+
++(id)initZERO{
+	return [[[RatTerm alloc] initWithCoeff:[RatNum initZERO] Exp:0] autorelease];
+}
+
++(id)initNaN{
+	return [[[RatTerm alloc] initWithCoeff:[RatNum initNaN] Exp:1] autorelease];
+}
+
+-(void)dealloc{
+	[coeff release];
+	[super dealloc];
+}
+
+@end
