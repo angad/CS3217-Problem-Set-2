@@ -1,0 +1,75 @@
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly checkRep]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:32: error: expected ']' before ';' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:33: error: expected ';' before '}' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:35: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:35: warning: 'RatNum' may not respond to '-isZero'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:35: warning: (Messages without a matching method signature
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:35: warning: will be assumed to return 'id' and accept
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:35: warning: '...' as arguments.)
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:45: warning: 'RatPoly' may not respond to '-term'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly init]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:62: error: lvalue required as left operand of assignment
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:63: error: 'degree' undeclared (first use in this function)
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:63: error: (Each undeclared identifier is reported only once
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:63: error: for each function it appears in.)
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:65: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly initWithTerm:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:74: warning: 'NSArray' may not respond to '-expt'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:79: error: lvalue required as left operand of assignment
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:82: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly initWithTerms:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:91: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:93: error: lvalue required as left operand of assignment
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:95: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly getTerm:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:106: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:117: error: expected ']' before 'autorelease'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:117: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:117: warning: incompatible Objective-C types returning 'struct RatNum *', expected 'struct RatTerm *'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly isNaN]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:126: warning: return makes integer from pointer without a cast
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:130: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:128: warning: unused variable 't'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly negate]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:147: error: expected ']' before 'autorelease'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:151: error: lvalue required as left operand of assignment
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:154: error: expected ']' before 'autorelease'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly add:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:175: error: expected ']' before 'autorelease'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:178: error: expected ']' before 'autorelease'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:182: error: 'tp' undeclared (first use in this function)
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:190: warning: control reaches end of non-void function
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly sub:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:207: warning: control reaches end of non-void function
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly mul:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:227: warning: control reaches end of non-void function
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly div:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:269: warning: control reaches end of non-void function
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly eval:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:278: warning: control reaches end of non-void function
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly stringValue]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:307: warning: control reaches end of non-void function
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '+[RatPoly valueOf:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:317: warning: control reaches end of non-void function
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly isEqual:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:325: warning: control reaches end of non-void function
+{standard input}:114:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
+{standard input}:114:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+{standard input}:108:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+{standard input}:108:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+{standard input}:96:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000001$pb"
+{standard input}:96:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+{standard input}:89:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"
+{standard input}:89:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+{standard input}:82:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+{standard input}:82:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+{standard input}:73:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000001$pb"
+{standard input}:73:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+{standard input}:66:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"
+{standard input}:66:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+{standard input}:59:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+{standard input}:59:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1

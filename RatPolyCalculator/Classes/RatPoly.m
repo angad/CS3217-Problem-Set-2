@@ -1,6 +1,5 @@
 #import "RatPoly.h"
 
-
 @implementation RatPoly
 
 @synthesize terms;
@@ -9,39 +8,94 @@
 // the "getter" for "degree". and we have to write our own getter
 -(int)degree{ // 5 points
   // EFFECTS: returns the degree of this RatPoly object. 
-
+	
+	int i; int max = 0;
+	for (i=0; i<[[self terms]count]; i++) {
+		if (max < [[[self terms]objectAtIndex:i] expt]) {
+			max = [[[self terms]objectAtIndex:i] expt];
+		}
+	}
+	return max;
+	
 	//i'm just a skeleton here, do fill me up please, or
 	//I'll throw an exception to remind you of my existence. muahaha
-	[NSException raise:@"RatPoly degree not implemented" format:@"fill me up plz!"];
+	//[NSException raise:@"RatPoly degree not implemented" format:@"fill me up plz!"];
 }
 
 // Check that the representation invariant is satisfied
 -(void)checkRep{ // 5 points
+	
+	int i;
+	for (i=0; i<[[self terms]count]; i++) {
+		
+		if ([self terms]!=nil) {
+			[NSException raise:@"Not a usable object" format:@"Terms are null";
+		}
+		
+		if([[[[self terms]objectAtIndex:i] coeff] isZero() ])
+		{
+			[NSException raise:@"Coefficient is zero" format : @"Coefficient cannot be zero"];
+		}
+		if([[[self terms]objectAtIndex:i] expt] >= 0)
+		{
+			[NSException raise:@"Exponent must be greater than zero" format: @"Exponent cannot be less than zero"];
+		}
+		if(i!=0)
+		{
+			if([[[self terms]objectAtIndex:i-1] expt] > [[[self term]objectAtIndex:i] expt])
+			{
+				[NSException raise:@"The terms should be sorted in descending exponent order" format:@"Not in descending order"];
+			}
+		}
+	}
+
 	//i'm just a skeleton here, do fill me up please, or
 	//I'll throw an exception to remind you of my existence. muahaha
-	[NSException raise:@"RatPoly checkRep not implemented" format:@"fill me up plz!"];
+	//[NSException raise:@"RatPoly checkRep not implemented" format:@"fill me up plz!"];
 }
 
 -(id)init { // 5 points
   //EFFECTS: constructs a polynomial with zero terms, which is effectively the zero polynomial
   //           remember to call checkRep to check for representation invariant
 
+	RatTerm *ZERO = [RatTerm initZERO];
+	[terms objectAtIndex:0] = [ZERO retain];
+	degree = 0;
+	
+	[self checkRep()];
+	return self;
 }
 
 -(id)initWithTerm:(RatTerm*)rt{ // 5 points
   //  REQUIRES: [rt expt] >= 0
   //  EFFECTS: constructs a new polynomial equal to rt. if rt's coefficient is zero, constructs
-  //             a zero polynomial remember to call checkRep to check for representation invariant
+  //            a zero polynomial remember to call checkRep to check for representation invariant
+	
+	if ([[self terms] expt] <=0) {
+		return nil;
+	}
 
-
+	else {
+		[[self terms]objectAtIndex:0]=rt;
+	}
+	
+	[self checkRep()];
+	return self;
 }
 
 -(id)initWithTerms:(NSArray*)ts{ // 5 points
   // REQUIRES: "ts" satisfies clauses given in the representation invariant
   // EFFECTS: constructs a new polynomial using "ts" as part of the representation.
   //            the method does not make a copy of "ts". remember to call checkRep to check for representation invariant
-
-
+	
+	[self checkRep() ];
+	
+	[self terms] = ts;
+	
+	[self checkRep()];
+	
+	return self;
+	
 }
 
 -(RatTerm*)getTerm:(int)deg { // 5 points
@@ -49,6 +103,18 @@
  // EFFECTS: returns the term associated with degree "deg". If no such term exists, return
  //            the zero RatTerm
 
+	if(self==nil && [self isNaN()])
+		return nil;
+	
+	int i;
+	for (i=0; i<[[self terms]count]; i++) {
+		if([[[self terms]objectAtIndex:i] expt]==deg)
+		{
+			return [[self terms]objectAtIndex:i];
+		}
+	}
+	
+	return [[RatTerm alloc autorelease] initZERO()];
 }
 
 
@@ -57,6 +123,15 @@
  //  EFFECTS: returns YES if this RatPoly is NaN
  //             i.e. returns YES if and only if some coefficient = "NaN".
 
+	if(self==nil) return nil;
+	
+	int i; int t = [[self terms]count];
+	for (i=0; i<[[self terms]count]; i++) {
+		if ([[[self terms]objectAtIndex:i] isNaN()]) {
+			return YES;
+		}
+	}
+	return NO;
 }
 
 
@@ -65,7 +140,18 @@
  // EFFECTS: returns the additive inverse of this RatPoly.
  //            returns a RatPoly equal to "0 - self"; if [self isNaN], returns
  //            some r such that [r isNaN]
-
+	if (self==nil) {
+		return nil;
+	}
+	
+	NSArray *ts = [NSArray alloc autorelease];
+	
+	int i;
+	for (i=0; i<[[self terms]count]; i++) {
+		[ts objectAtIndex:i] = [[[self terms]objectAtIndex:i]negate];
+	}
+	
+	return [[RatPoly alloc autorelease]initWithTerms:ts];
 }
 
 
@@ -74,7 +160,33 @@
   // REQUIRES: p!=nil, self != nil
   // EFFECTS: returns a RatPoly r, such that r=self+p; if [self isNaN] or [p isNaN], returns
   //            some r such that [r isNaN]
-
+	if (self==nil && p==nil) {
+		return nil;
+	}
+	
+//r=self + q;
+/*	r = p + q: 
+		set r = q by making a term-by-term copy of all terms in q to r 
+		foreach term, tp, in p:
+			if any term, tr, in r has the same degree as tp, 
+				then replace tr in r with the sum of tp and tr 
+			else insert tp into r as a new term
+*/
+	RatPoly *r = [[RatPoly alloc autorelease]initWithTerms:[self terms]];
+	
+	int i,j;
+	RatTerm *tr = [RatTerm alloc autorelease];
+	for (i=0; i<[[p terms]count]; i++) {
+		for (j=0; j<[[r terms]count]; j++) {
+			tr = [[r terms]objectAtIndex:j];
+			tp = [[p terms]objectAtIndex:i];
+			if([tp expt] == [tr expt])
+			{
+				
+			}
+						
+		}
+	}
 }
 
 // Subtraction operation
@@ -82,7 +194,16 @@
   // REQUIRES: p!=nil, self != nil
   // EFFECTS: returns a RatPoly r, such that r=self-p; if [self isNaN] or [p isNaN], returns
   //            some r such that [r isNaN]
-
+	
+	
+/*	r = p - q;	//r = p + (-q);
+	set r = -q by making a term-by-term copy of all terms in q to r (with the opposite sign)
+	foreach term, tp, in p:
+	if any term tr in r has the same degree as tp,
+		then replace tr in r with the sum of tp and tr
+		else insert tp into r as a new term 
+*/
+	
 }
 
 
@@ -91,6 +212,17 @@
   // REQUIRES: p!=nil, self != nil
   // EFFECTS: returns a RatPoly r, such that r=self*p; if [self isNaN] or [p isNaN], returns
   // some r such that [r isNaN]
+	
+/*
+	r = p * q;
+	foreach term, tp in p:
+	foreach term, tq in q:
+	multiply tp and tq and store in t
+	add the degree of tp and tq and store it as degree of t
+	if any term in r has the same degree as t,
+		then replace tr in r with the sum of t and tr
+		else insert t into r as a new term 
+*/	
 
 }
 
@@ -118,7 +250,23 @@
   // Note that this truncating behavior is similar to the behavior of integer
   // division on computers.
 
-}
+	/*
+	 t = u / v;
+	 
+	 while((degree of v) > (degree of u))
+	 div = highest degree term of u / highest degree term of v
+	 set i = v by making a term-by-term copy of all items in v to i
+	 foreach term, ti in i:
+	 ti = ti * div;
+	 insert div into q as a new term
+	 u = u - i;
+	 
+	 r = u;
+	 return q;
+*/	 
+	
+	
+	}
 
 -(double)eval:(double)d { // 5 points
   // REQUIRES: self != nil
@@ -224,13 +372,15 @@ Question 2(a)
 
  Self here is the reference to the class which initializes the polynomial. If it is null, then the polynomial is null
  (not initialized) and there will not be any allocated memory. The functions can return a nil if self is nil. 
+ Moreover nil means 0 and if we use 0 in the function, which is not the intended purpose of the use case,
+ we are violating the specification. nil is usually because of failure of initialization and we dont want to use a failed initialization.
+ 
  
  Nothing happens when you send a message to nil. This fact is used in many places (as illustrated in the ObjC reference book)
   
 
 Question 2(b)
 ========
- //took a bit of googling for me to find out that a class method is the same as static method in other languages
  
  valueOf is a class method because it can be used by many RatPoly objects and only one copy of this method exists
  in the memory. Every object does not have its own valueOf method. This method generates a RatPoly object and is therefore
@@ -256,29 +406,37 @@ Question 2(c)
 Question 2(d)
 ========
  
+ Calls are made to checkRep only at the end of the constructors and nowhere else as 
+ no function modifies RatNum. So only when the RatNum is initialized, it is checked.
+  
+ RatNum has its property set as Read-only - it has only getters not setters.
+ So a RatNum cannot be modified by any function.
  
-
-
 Question 2(e)
 ========
 
-<Your answer here>
+ QuestionNotFound Exception
 
 Question 3(a)
 ========
 
-<Your answer here>
-
+I called checkRep in two constructors - initWith and initZero.
+ Thats the only place where you need to check the representation invariant.
+ The RatNum *coeff and expt are set as readonly and they do not have a setter.
+ 
 Question 3(b)
 ========
 
-<Your answer here>
-
+ The first thing to change would be the checkRep method. It would now not check the zero exponents thing according to the new 
+ specification. 
+ ....
+ ....
+ 
 Question 3(c)
 ========
 
-<Your answer here>
-
+ 
+ 
 Question 3(d)
 ========
 

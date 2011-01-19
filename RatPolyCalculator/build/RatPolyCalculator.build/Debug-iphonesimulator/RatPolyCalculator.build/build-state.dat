@@ -1,0 +1,408 @@
+TRatPolyCalculator
+v7
+r0
+t317143474.567659
+cCheck dependencies
+cProcessInfoPlistFile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/Info.plist RatPolyCalculator-Info.plist
+cCompileXIB /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/MainWindow.xib
+cCompileXIB /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculatorViewController.xib
+cProcessPCH /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch.gch RatPolyCalculator_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/main.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculatorAppDelegate.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculatorViewController.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatNum.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatNum.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatTerm.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPoly.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator normal i386
+cGenerateDSYMFile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app.dSYM /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator
+cTouch /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatNum.h
+c000000004D319E0E000000000000119C
+t1295097358
+s4508
+i<Foundation/Foundation.h>
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatNum.m
+c000000004D375C720000000000001BD7
+t1295473778
+s7127
+i"RatNum.h"
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.h
+c000000004D3768880000000000001BC9
+t1295476872
+s7113
+i<Foundation/Foundation.h>
+i"RatTerm.h"
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m
+c000000004D37705700000000000035BB
+t1295478871
+s13755
+i"RatPoly.h"
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorAppDelegate.h
+c000000004D300F6E0000000000000175
+t1294995310
+s373
+i<UIKit/UIKit.h>
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorAppDelegate.m
+c000000004D300F700000000000000740
+t1294995312
+s1856
+i"RatPolyCalculatorAppDelegate.h"
+i"RatPolyCalculatorViewController.h"
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorViewController.h
+c000000004D300F7000000000000001BF
+t1294995312
+s447
+i<UIKit/UIKit.h>
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorViewController.m
+c000000004D300F7000000000000008B4
+t1294995312
+s2228
+i"RatPolyCalculatorViewController.h"
+i"RatPoly.h"
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.h
+c000000004D375C6C0000000000001497
+t1295473772
+s5271
+i<Foundation/Foundation.h>
+i"RatNum.h"
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m
+c000000004D375C6A0000000000001DF3
+t1295473770
+s7667
+i"RatTerm.h"
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/MainWindow.xib
+c000000004D300F3E0000000000004D6D
+t1294995262
+s19821
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculatorViewController.xib
+c000000004D300F400000000000008691
+t1294995264
+s34449
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculator_Prefix.pch
+c000000004D300F4000000000000000CB
+t1294995264
+s203
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app
+t1295450207
+s238
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app.dSYM
+t1295450207
+s102
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/Info.plist
+t1295450207
+s839
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/MainWindow.nib
+t1295449103
+s1143
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/PkgInfo
+t1295450207
+s8
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator
+t1295450207
+s35152
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculatorViewController.nib
+t1295449103
+s3027
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatNum.o
+t1295449104
+s24284
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPoly.o
+t1295450207
+s13312
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculator.LinkFileList
+c000000004D36FC0F000000000000042B
+t1295449103
+s1067
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculatorAppDelegate.o
+t1295449104
+s50776
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculatorViewController.o
+t1295449104
+s46392
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatTerm.o
+t1295449104
+s14868
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/main.o
+t1295449104
+s6356
+
+N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/main.m
+c000000004D300F420000000000000180
+t1294995266
+s384
+i<UIKit/UIKit.h>
+
+N/var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch.gch
+t1295449104
+s15453392
+
+NRatPolyCalculator-Info.plist
+c000000004D36FFA600000000000004A5
+t1295450022
+s1189
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies317143474#317143474#0(0"0(0#1#0"8628359584#0"0#
+
+CCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatNum.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatNum.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s317141904.494353
+e317141904.577121
+r1
+xCompileC
+xbuild/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatNum.o
+x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatNum.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatNum.m317141904#317141904#0(0"0(0#0#81"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatNum.m8613512000#2419"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -include /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatNum.m -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatNum.o0#
+
+CCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPoly.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s317143007.673015
+e317143007.711164
+r1
+xCompileC
+xbuild/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPoly.o
+x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly degree]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:16: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly init]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:29: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly initWithTerm:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:37: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly initWithTerms:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:45: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly getTerm:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:52: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly isNaN]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:60: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly negate]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:69: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly add:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:78: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly sub:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:86: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly mul:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:95: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly div:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:121: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly eval:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:130: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly stringValue]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:159: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '+[RatPoly valueOf:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:169: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly isEqual:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:177: warning: control reaches end of non-void function
+lSLF07#2@90"Compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317143007#317143007#0(3829"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly degree]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:16: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly init]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:29: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly initWithTerm:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:37: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly initWithTerms:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:45: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly getTerm:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:52: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly isNaN]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:60: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly negate]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:69: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly add:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:78: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly sub:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:86: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly mul:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:95: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly div:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:121: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly eval:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:130: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly stringValue]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:159: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '+[RatPoly valueOf:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:169: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly isEqual:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:177: warning: control reaches end of non-void function15(22@40"Control reaches end of non-void function317143007#117#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#16#0#16#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#369#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#29#0#29#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#630#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#37#0#37#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#892#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#45#0#45#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#1148#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#52#0#52#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#1401#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#60#0#60#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#1655#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#69#0#69#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#1907#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#78#0#78#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#2159#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#86#0#86#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#2411#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#95#0#95#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#2663#138#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#121#0#121#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#2917#138#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#130#0#130#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#3177#138#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#159#0#159#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#3434#138#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#169#0#169#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317143007#3691#138#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317142780#177#0#177#0#40"control reaches end of non-void function0(0#0#82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m8624813632#2421"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -include /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPoly.o0#
+
+CCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculatorAppDelegate.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s317141904.492986
+e317141904.576829
+r1
+xCompileC
+xbuild/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculatorAppDelegate.o
+x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@111"Compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorAppDelegate.m317141904#317141904#0(0"0(0#0#103"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorAppDelegate.m8613942688#2463"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -include /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorAppDelegate.m -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculatorAppDelegate.o0#
+
+CCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculatorViewController.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s317141904.493669
+e317141904.556106
+r1
+xCompileC
+xbuild/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculatorViewController.o
+x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@114"Compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorViewController.m317141904#317141904#0(0"0(0#0#106"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorViewController.m8613815776#2469"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -include /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorViewController.m -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculatorViewController.o0#
+
+CCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatTerm.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s317141904.534557
+e317141904.579321
+r1
+xCompileC
+xbuild/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatTerm.o
+x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '+[RatTerm initZERO]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:43: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '+[RatTerm initNaN]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:48: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm isNaN]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:54: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm isZero]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:60: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm eval:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:70: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm negate]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:76: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm add:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:88: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm sub:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:99: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm mul:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:107: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm div:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:115: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm stringValue]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:136: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '+[RatTerm valueOf:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:146: warning: control reaches end of non-void function
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm isEqual:]':
+o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:155: warning: control reaches end of non-void function
+lSLF07#2@90"Compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m317141904#317141904#0(3309"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '+[RatTerm initZERO]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:43: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '+[RatTerm initNaN]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:48: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm isNaN]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:54: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm isZero]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:60: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm eval:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:70: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm negate]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:76: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm add:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:88: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm sub:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:99: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm mul:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:107: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm div:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:115: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm stringValue]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:136: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '+[RatTerm valueOf:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:146: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm isEqual:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:155: warning: control reaches end of non-void function13(22@40"Control reaches end of non-void function317141904#119#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m316800606#43#0#43#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317141904#374#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m316800606#48#0#48#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317141904#627#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m316800606#54#0#54#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317141904#881#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m316800606#60#0#60#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317141904#1134#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m316800606#70#0#70#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317141904#1388#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m316800606#76#0#76#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317141904#1640#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m316800606#88#0#88#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317141904#1892#137#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m316800606#99#0#99#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317141904#2144#138#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m316800606#107#0#107#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317141904#2397#138#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m316800606#115#0#115#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317141904#2657#138#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m316800606#136#0#136#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317141904#2914#138#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m316800606#146#0#146#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function317141904#3171#138#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m316800606#155#0#155#0#40"control reaches end of non-void function0(0#0#82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m8619772224#2421"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -include /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatTerm.o0#
+
+CCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/main.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s317141904.491845
+e317141904.534473
+r1
+xCompileC
+xbuild/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/main.o
+x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/main.m317141904#317141904#0(0"0(0#0#71"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/main.m8614162432#2407"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -include /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/main.m -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/MainWindow.xib
+s317141903.537123
+e317141903.873391
+r1
+xCompileXIB
+x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/MainWindow.xib
+o2011-01-19 22:58:23.741 Interface Builder Cocoa Touch Tool[949:1b03] CFPreferences: user home directory at file://localhost/Users/u0909118-m/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF07#2@25"CompileXIB MainWindow.xib317141903#317141903#0(243"2011-01-19 22:58:23.741 Interface Builder Cocoa Touch Tool[949:1b03] CFPreferences: user home directory at file://localhost/Users/u0909118-m/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.0(0#0#79"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/MainWindow.xib8590975648#658"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/MainWindow.nib /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculatorViewController.xib
+s317141903.538363
+e317141903.936056
+r1
+xCompileXIB
+x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculatorViewController.xib
+o2011-01-19 22:58:23.763 Interface Builder Cocoa Touch Tool[950:1903] CFPreferences: user home directory at file://localhost/Users/u0909118-m/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@46"CompileXIB RatPolyCalculatorViewController.xib317141903#317141903#0(327"2011-01-19 22:58:23.763 Interface Builder Cocoa Touch Tool[950:1903] CFPreferences: user home directory at file://localhost/Users/u0909118-m/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#100"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculatorViewController.xib8618056032#700"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculatorViewController.nib /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculatorViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CGenerateDSYMFile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app.dSYM /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator
+s317143007.728901
+e317143007.740542
+r1
+xGenerateDSYMFile
+x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app.dSYM
+x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator
+lSLF07#2@139"GenerateDSYMFile build/Debug-iphonesimulator/RatPolyCalculator.app.dSYM build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator317143007#317143007#0(0"0(0#0#132"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator8622908032#491"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app.dSYM0#
+
+CLd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator normal i386
+s317143007.711236
+e317143007.728830
+r1
+xLd
+x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator
+xnormal
+xi386
+lSLF07#2@137"Link /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator317143007#317143007#0(0"0(0#0#0"8623251712#1080"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -filelist /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculator.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator0#
+
+CProcessInfoPlistFile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/Info.plist RatPolyCalculator-Info.plist
+s317143007.669714
+e317143007.672370
+r1
+xProcessInfoPlistFile
+x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/Info.plist
+xRatPolyCalculator-Info.plist
+lSLF07#2@36"Process RatPolyCalculator-Info.plist317143007#317143007#0(0"0(0#0#93"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculator-Info.plist8630152032#587"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility RatPolyCalculator-Info.plist -genpkginfo /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/Info.plist0#
+
+CProcessPCH /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch.gch RatPolyCalculator_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s317141903.936324
+e317141904.491765
+r1
+xProcessPCH
+x/var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch.gch
+xRatPolyCalculator_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@39"Precompile RatPolyCalculator_Prefix.pch317141903#317141904#0(0"0(0#0#93"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculator_Prefix.pch8614640800#2263"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculator_Prefix.pch -o /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch.gch0#
+
+CTouch /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app
+s317143007.740599
+e317143007.742431
+r1
+xTouch
+x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app
+lSLF07#2@120"Touch /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app317143007#317143007#0(0"0(0#0#0"8622753728#340"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app0#
+

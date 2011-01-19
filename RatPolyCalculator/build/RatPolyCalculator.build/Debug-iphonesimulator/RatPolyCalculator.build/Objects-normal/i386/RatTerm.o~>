@@ -1,0 +1,147 @@
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '+[RatTerm initZERO]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:43: warning: instance variable 'coeff' accessed in class method
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:44: warning: instance variable 'expt' accessed in class method
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '+[RatTerm initNaN]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:55: warning: instance variable 'coeff' accessed in class method
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:56: warning: instance variable 'expt' accessed in class method
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:57: warning: control reaches end of non-void function
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm eval:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:88: error: incompatible types in return
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:93: error: incompatible types in return
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:94: warning: control reaches end of non-void function
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm negate]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:100: error: expected ')' before 'isNaN'
+#'property_reference_expr' not supported by pp_c_expression#'/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm add:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:118: error: called object  is not a function
+#'property_reference_expr' not supported by pp_c_expression#'/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:118: error: called object  is not a function
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:118: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:118: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:123: error: expected ']' before 'autorelease'
+#'property_reference_expr' not supported by pp_c_expression#'/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm sub:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:137: error: called object  is not a function
+#'property_reference_expr' not supported by pp_c_expression#'/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:137: error: called object  is not a function
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:137: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:137: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:142: error: expected ']' before 'autorelease'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm mul:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:154: error: 'null' undeclared (first use in this function)
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:154: error: (Each undeclared identifier is reported only once
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:154: error: for each function it appears in.)
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:154: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:154: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:155: error: expected ')' before '{' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:163: error: expected expression before '}' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:163: warning: control reaches end of non-void function
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm div:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:170: error: 'null' undeclared (first use in this function)
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:170: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:170: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:175: error: 'coeff_mult' undeclared (first use in this function)
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:174: warning: unused variable 'coeff_div'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm stringValue]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:197: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:198: error: expected ']' before '(' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:200: error: expected ']' before 'stringValue'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '+[RatTerm valueOf:]':
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:221: warning: unused variable 'arg'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:226: warning: passing argument 1 of 'componentsSeparatedByString:' from incompatible pointer type
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:227: warning: initialization makes integer from pointer without a cast
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:227: warning: unused variable 'e'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:229: error: 'e' undeclared (first use in this function)
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:233: error: 'isEqual' undeclared (first use in this function)
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:233: error: expected ';' before ':' token
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:253: error: expected declaration or statement at end of input
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: At top level:
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:253: warning: '@end' missing in implementation context
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:253: warning: incomplete implementation of class 'RatTerm'
+/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:253: warning: method definition for '-isEqual:' not found
+{standard input}:467:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000006$pb"
+{standard input}:467:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression
+{standard input}:461:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" minus "L00000000006$pb"
+{standard input}:461:symbol: "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:453:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000006$pb"
+{standard input}:453:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression
+{standard input}:447:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" minus "L00000000006$pb"
+{standard input}:447:symbol: "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:409:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000005$pb"
+{standard input}:409:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression
+{standard input}:403:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" minus "L00000000005$pb"
+{standard input}:403:symbol: "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:375:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.expt$non_lazy_ptr" minus "L00000000004$pb"
+{standard input}:375:symbol: "L_OBJC_IVAR_$_RatTerm.expt$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:366:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" minus "L00000000004$pb"
+{standard input}:366:symbol: "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:359:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000004$pb"
+{standard input}:359:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
+{standard input}:349:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000004$pb"
+{standard input}:349:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+{standard input}:343:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000004$pb"
+{standard input}:343:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression
+{standard input}:340:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_1" minus "L00000000004$pb"
+{standard input}:340:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_1" can't be undefined in a subtraction expression
+{standard input}:310:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000003$pb"
+{standard input}:310:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
+{standard input}:303:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.expt$non_lazy_ptr" minus "L00000000003$pb"
+{standard input}:303:symbol: "L_OBJC_IVAR_$_RatTerm.expt$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:295:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000003$pb"
+{standard input}:295:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+{standard input}:289:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" minus "L00000000003$pb"
+{standard input}:289:symbol: "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:281:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000003$pb"
+{standard input}:281:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+{standard input}:278:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_1" minus "L00000000003$pb"
+{standard input}:278:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_1" can't be undefined in a subtraction expression
+{standard input}:246:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
+{standard input}:246:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
+{standard input}:236:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.expt$non_lazy_ptr" minus "L00000000002$pb"
+{standard input}:236:symbol: "L_OBJC_IVAR_$_RatTerm.expt$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:228:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"
+{standard input}:228:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+{standard input}:222:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" minus "L00000000002$pb"
+{standard input}:222:symbol: "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:213:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.expt$non_lazy_ptr" minus "L00000000002$pb"
+{standard input}:213:symbol: "L_OBJC_IVAR_$_RatTerm.expt$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:205:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"
+{standard input}:205:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+{standard input}:199:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" minus "L00000000002$pb"
+{standard input}:199:symbol: "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:189:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"
+{standard input}:189:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+{standard input}:180:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000002$pb"
+{standard input}:180:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+{standard input}:177:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_1" minus "L00000000002$pb"
+{standard input}:177:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_1" can't be undefined in a subtraction expression
+{standard input}:144:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+{standard input}:144:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+{standard input}:139:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_0" minus "L00000000001$pb"
+{standard input}:139:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_0" can't be undefined in a subtraction expression
+{standard input}:131:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.expt$non_lazy_ptr" minus "L00000000001$pb"
+{standard input}:131:symbol: "L_OBJC_IVAR_$_RatTerm.expt$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:122:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"
+{standard input}:122:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+{standard input}:116:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
+{standard input}:116:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+{standard input}:113:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_1" minus "L00000000001$pb"
+{standard input}:113:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_1" can't be undefined in a subtraction expression
+{standard input}:107:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" minus "L00000000001$pb"
+{standard input}:107:symbol: "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:97:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+{standard input}:97:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+{standard input}:92:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_0" minus "L00000000001$pb"
+{standard input}:92:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_0" can't be undefined in a subtraction expression
+{standard input}:84:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" minus "L00000000001$pb"
+{standard input}:84:symbol: "L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RatTerm.coeff$non_lazy_ptr
+{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_0
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
+{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_1
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
+{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RatTerm.expt$non_lazy_ptr
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_9
