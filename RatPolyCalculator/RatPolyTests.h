@@ -14,7 +14,7 @@
 
 
 @interface RatPolyTests : SenTestCase {
-
+	
 }
 
 @end

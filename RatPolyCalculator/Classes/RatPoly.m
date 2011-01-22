@@ -26,24 +26,24 @@
 -(void)checkRep{ // 5 points
 	
 	int i;
+	
+	if ([self terms]==nil) 
+	{
+		[NSException raise:@"Not a usable object" format:@"Terms are null"];
+	}
+	
 	for (i=0; i<[[self terms]count]; i++) {
-		
-		if ([self terms]!=nil) 
-		{
-			[NSException raise:@"Not a usable object" format:@"Terms are null"];
-		}
-		
 		if([[[[self terms]objectAtIndex:i] coeff] numer] == 0)
 		{
 			[NSException raise:@"Coefficient is zero" format : @"Coefficient cannot be zero"];
 		}
-		if([[[self terms]objectAtIndex:i] expt] >= 0)
+		if([[[self terms]objectAtIndex:i] expt] < 0)
 		{
 			[NSException raise:@"Exponent must be greater than zero" format: @"Exponent cannot be less than zero"];
 		}
 		if(i!=0)
 		{
-			if([[[self terms]objectAtIndex:i-1] expt] > [[[self terms]objectAtIndex:i] expt])
+			if([[[self terms]objectAtIndex:i-1] expt] <= [[[self terms]objectAtIndex:i] expt])
 			{
 				[NSException raise:@"The terms should be sorted in descending exponent order" format:@"Not in descending order"];
 			}
@@ -59,31 +59,21 @@
   //EFFECTS: constructs a polynomial with zero terms, which is effectively the zero polynomial
   //           remember to call checkRep to check for representation invariant
 
-	RatTerm *ZERO = [RatTerm initZERO];
-	NSArray *t = [[NSArray alloc] arrayByAddingObject:ZERO];
-	terms = t;
-	[self checkRep];
-	return self;
+	return [self initWithTerms:[NSArray array]];
 }
 
 -(id)initWithTerm:(RatTerm*)rt{ // 5 points
   //  REQUIRES: [rt expt] >= 0
   //  EFFECTS: constructs a new polynomial equal to rt. if rt's coefficient is zero, constructs
   //            a zero polynomial remember to call checkRep to check for representation invariant
-	
 	if ([rt expt] <=0) {
-		return nil;
+		return [self init];
 	}
 
 	else {
-		NSMutableArray *t = [[NSMutableArray alloc] autorelease];
-		t = [terms mutableCopy];
-		[t addObject:rt];
-		terms = t;
+		NSArray *t = [NSArray arrayWithObject:rt];
+		return [self initWithTerms:t];
 	}
-	
-	[self checkRep];
-	return self;
 }
 
 -(id)initWithTerms:(NSArray*)ts{ // 5 points
@@ -91,14 +81,11 @@
   // EFFECTS: constructs a new polynomial using "ts" as part of the representation.
   //            the method does not make a copy of "ts". remember to call checkRep to check for representation invariant
 	
-	[self checkRep];
-	
-	terms = ts;
-	
+	[super init];
+	terms = [ts retain];
 	[self checkRep];
 	
 	return self;
-	
 }
 
 -(RatTerm*)getTerm:(int)deg { // 5 points
@@ -129,8 +116,10 @@
 	if(self==nil) return NO;
 	
 	int i; 
-	for (i=0; i<[[self terms]count]; i++) {
-		if ([[[self terms]objectAtIndex:i] isNaN]) {
+	for (i=0; i<[[self terms]count]; i++) 
+	{
+		if ([[[self terms]objectAtIndex:i] isNaN]) 
+		{
 			return YES;
 		}
 	}
@@ -168,35 +157,60 @@
 		return nil;
 	}
 	
-//r=self + q;
-/*	r = p + q: 
-		set r = q by making a term-by-term copy of all terms in q to r 
-		foreach term, tp, in p:
-			if any term, tr, in r has the same degree as tp, 
-				then replace tr in r with the sum of tp and tr 
-			else insert tp into r as a new term
-*/
+	if ([self isNaN] || [p isNaN]) {
+		//NSArray *t = [NSArray arrayWithObject:[RatTerm initNaN]];
+		return [[[RatPoly alloc]initWithTerm:[RatTerm initNaN]]autorelease];
+	}
 
 	NSMutableArray *tr = [[self terms]mutableCopy];
 	NSMutableArray *tp = [[p terms]mutableCopy];
+	NSMutableArray *result = [NSMutableArray array]; //autoreleased
+	NSMutableArray *res = [NSMutableArray array];	//autoreleased
+	int i=0,j=0;
+	int k=0, l=0;
 	
-	int i,j;
-
-	for (i=0; i<[tp count]; i++)
-	{
-		for (j=0; j<[tr count]; j++) 
+	//mergesorting
+	while (i<[tp count] && j<[tr count]) {
+		if([[tp objectAtIndex:i] expt] < [[tr objectAtIndex:j]expt])
 		{
-			if([[tp objectAtIndex:i] expt] == [[tr objectAtIndex:j] expt])
-			{
-			 	[tr replaceObjectAtIndex:j withObject:[[tr objectAtIndex:j] add:[tp objectAtIndex:i]]];
-			}
-			else 
-			{
-				[tr addObject:[tp objectAtIndex:i]];
-			}
+			[result insertObject:[tp objectAtIndex:i] atIndex:k];
+			i++;
+		}
+		else 
+		{
+			[result insertObject:[tr objectAtIndex:j] atIndex:k];
+			 j++;
+		}
+		k++;
+	}
+	
+	while (i<[tp count]) {
+		[result insertObject:[tp objectAtIndex:i] atIndex:k];
+		i++; k++;
+	}
+	while (j<[tr count]) {
+		[result insertObject:[tr objectAtIndex:j] atIndex:k];
+		j++; k++;
+	}
+	
+	//adding same exponent terms
+	k=1;
+	while (k<[result count]){
+		if ([[result objectAtIndex:k]expt]==[[result objectAtIndex:k-1]expt]) {
+			[res insertObject:[[result objectAtIndex:k] add:[result objectAtIndex:k-1]] atIndex:l];
+			l++; k++;
+		}
+		else {
+			[res insertObject:[result objectAtIndex:k-1] atIndex:l];
+			l++; k++;
 		}
 	}
-	return [[[RatPoly alloc] initWithTerms:tr]autorelease];
+	
+	//Releasing
+	[tr release];
+	[tp release];
+	
+	return [[[RatPoly alloc]initWithTerms:res] autorelease];
 }
 
 
@@ -211,7 +225,7 @@
 	
 	if([self isNaN] || [p isNaN])
 	{
-		return [[[RatPoly alloc]initWithTerm:[[[RatTerm alloc]initNaN]autorelease]]autorelease];
+		return [[[RatPoly alloc]initWithTerm:[RatTerm initNaN]]autorelease];
 	}
 	
 /*	r = p - q;	//r = p + (-q);
@@ -224,7 +238,6 @@
 	p = [p negate];
 	
 	return [self add:p];
-	
 }
 
 
@@ -301,7 +314,7 @@
 	
 	for (i=0; i<[[self terms]count]; i++) {
 		if ([self degree] == [[[self terms]objectAtIndex:i]expt]) {
-			t = [[[RatTerm alloc]initWithTerm:[[self terms]objectAtIndex:i]]autorelease];
+			t = [[[RatPoly alloc]initWithTerm:[[self terms]objectAtIndex:i]]autorelease];
 		}
 	}
 	return t;
@@ -353,14 +366,10 @@
 	RatTerm *div = [[RatTerm alloc] autorelease];
 	RatTerm *ti = [[RatTerm alloc] autorelease];
 		
-	NSMutableArray *tp = [[NSMutableArray alloc]autorelease];
-	tp = [[p terms]mutableCopy];
+	NSMutableArray *tp = [[[p terms]mutableCopy]autorelease];
+	//NSMutableArray *s = [[[self terms]mutableCopy]autorelease];
 	
-	NSMutableArray *s = [[NSMutableArray alloc]autorelease];
-	s = [[self terms]mutableCopy];
-	
-	
-	NSMutableArray *result = [[NSMutableArray alloc]autorelease];
+	NSMutableArray *result = [NSMutableArray array];
 	int i;
 	while ([self degree] > [p degree]) 
 	{
@@ -377,14 +386,22 @@
 }
 
 
-
 -(double)eval:(double)d { // 5 points
   // REQUIRES: self != nil
   // EFFECTS: returns the value of this RatPoly, evaluated at d
   //            for example, "x+2" evaluated at 3 is 5, and "x^2-x" evaluated at 3 is 6.
   //            if [self isNaN], return NaN
 
-
+	if ([self isNaN]) {
+		return NAN;
+	}
+	
+	int i;
+	double result = 0.0;
+	for (i=0; i<[[self terms]count]; i++) {
+		result += [[[self terms]objectAtIndex:i]eval:d];
+	}
+	return result;
 }
 
 
@@ -413,7 +430,17 @@
   //        
   // Valid example outputs include "x^17-3/2*x^2+1", "-x+1", "-1/2",
   // and "0".
+	if ([self isNaN]) {
+		return @"NaN";
+	}
 
+	NSMutableString *str = [[[NSMutableString alloc]stringByAppendingString:@""] autorelease];
+	int i;
+	for(i=0; i<[[self terms]count]; i++)
+	{
+		[str appendFormat:@"%@", [[[self terms]objectAtIndex:i]stringValue]];
+	}
+		 return str;
 }
 
 
@@ -423,7 +450,42 @@
   //              expresses a poly in the form defined in the stringValue method.
   //              Valid inputs include "0", "x-10", and "x^3-2*x^2+5/3*x+3", and "NaN".
   // EFFECTS : return a RatPoly p such that [p stringValue] = str
-
+	
+	if ([str isEqual:@"0"]) {
+		return [[[RatPoly alloc]initZERO]autorelease];
+	}
+	
+	int i;
+	RatTerm *t = [[RatTerm alloc]autorelease];
+	NSMutableArray *arr = [[NSMutableArray alloc]autorelease];
+	int j=0;
+	
+	NSString *sub = [[NSString alloc]autorelease];
+	
+	for (i=0; i<[str length]; i++) {
+		if ([str characterAtIndex:i]=='+' || [str characterAtIndex:i]=='-') {
+			sub = [str substringWithRange:NSMakeRange(j,i-1)];
+			j=i;
+			if ([str characterAtIndex:i]=='-') {
+				t = [[RatTerm valueOf:sub]negate];
+			}
+			else {
+				t = [RatTerm valueOf:sub];
+			}
+			[arr addObject:t];
+		}
+	}
+	
+	sub = [str substringWithRange:NSMakeRange(j, [str length]-1)];
+	if ([str characterAtIndex:j]=='-') {
+	t = [[RatTerm valueOf:sub]negate];
+	}
+	else {
+		t = [RatTerm valueOf:sub];
+	}
+	[arr addObject:t];
+	
+	return [[[RatPoly alloc]initWithTerms:arr]autorelease];
 }
 
 // Equality test
@@ -432,6 +494,19 @@
   // EFFECTS: returns YES if and only if "obj" is an instance of a RatPoly, which represents
   //            the same rational polynomial as self. All NaN polynomials are considered equal
 
+	if (self == nil) {
+		return NO;
+	}
+	
+	if ([[obj terms]count]==[[self terms] count]) {
+		int i;
+		for (i=0; i<[[self terms] count]; i++) {
+			if (!([[[obj terms] objectAtIndex:i] isEqual: [[self terms]objectAtIndex:i]])) {
+				return NO;
+			}
+		}
+	}
+	return YES;
 }
 
 @end
