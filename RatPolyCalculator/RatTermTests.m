@@ -30,7 +30,7 @@ RatTerm* term3(int numer, int denom, int expt) {
 }
 
 -(void)testPass{
-	STAssertTrue(1==1, @"", @"");
+//	STAssertTrue(1==1, @"", @"");
 }
 
 -(void)testCtor{
@@ -241,13 +241,21 @@ RatTerm* term3(int numer, int denom, int expt) {
 	RatTerm *t = term(-2, 3);
 	RatTerm *zero = term(0, 0);
 	STAssertEqualObjects(t, [zero add:t], @"", @"");
+	NSLog(@"passed 1");
 	STAssertEqualObjects(t, [t add:zero], @"", @"");
+	NSLog(@"passed 2");
 	STAssertEqualObjects(term(2, 3), [zero sub:t], @"", @"");
+	NSLog(@"passed 3");
 	STAssertEqualObjects(t, [t sub:zero], @"", @"");
+	NSLog(@"passed 4");
 	STAssertEqualObjects(zero, [zero mul:t], @"", @"");
+	NSLog(@"passed 5");
 	STAssertEqualObjects(zero, [t mul:zero], @"", @"");
+	NSLog(@"passed 6");
 	STAssertEqualObjects(zero, [zero div:t], @"", @"");
+	NSLog(@"passed 7");
 	STAssertEqualObjects(nanTerm, [t div:zero], @"", @"");
+	NSLog(@"passed 8");
 	STAssertEquals(0, [t sub:t].expt, @"", @"");
 }
 

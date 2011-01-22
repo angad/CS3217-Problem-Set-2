@@ -260,7 +260,6 @@
 			return [[[RatNum alloc] initWithNumer:x Denom:y] autorelease];
 		}
 	}
-
 }
 
 @end

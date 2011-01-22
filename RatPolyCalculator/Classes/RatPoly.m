@@ -28,11 +28,12 @@
 	int i;
 	for (i=0; i<[[self terms]count]; i++) {
 		
-		if ([self terms]!=nil) {
-			[NSException raise:@"Not a usable object" format:@"Terms are null";
+		if ([self terms]!=nil) 
+		{
+			[NSException raise:@"Not a usable object" format:@"Terms are null"];
 		}
 		
-		if([[[[self terms]objectAtIndex:i] coeff] isZero() ])
+		if([[[[self terms]objectAtIndex:i] coeff] numer] == 0)
 		{
 			[NSException raise:@"Coefficient is zero" format : @"Coefficient cannot be zero"];
 		}
@@ -42,7 +43,7 @@
 		}
 		if(i!=0)
 		{
-			if([[[self terms]objectAtIndex:i-1] expt] > [[[self term]objectAtIndex:i] expt])
+			if([[[self terms]objectAtIndex:i-1] expt] > [[[self terms]objectAtIndex:i] expt])
 			{
 				[NSException raise:@"The terms should be sorted in descending exponent order" format:@"Not in descending order"];
 			}
@@ -59,10 +60,9 @@
   //           remember to call checkRep to check for representation invariant
 
 	RatTerm *ZERO = [RatTerm initZERO];
-	[terms objectAtIndex:0] = [ZERO retain];
-	degree = 0;
-	
-	[self checkRep()];
+	NSArray *t = [[NSArray alloc] arrayByAddingObject:ZERO];
+	terms = t;
+	[self checkRep];
 	return self;
 }
 
@@ -71,15 +71,18 @@
   //  EFFECTS: constructs a new polynomial equal to rt. if rt's coefficient is zero, constructs
   //            a zero polynomial remember to call checkRep to check for representation invariant
 	
-	if ([[self terms] expt] <=0) {
+	if ([rt expt] <=0) {
 		return nil;
 	}
 
 	else {
-		[[self terms]objectAtIndex:0]=rt;
+		NSMutableArray *t = [[NSMutableArray alloc] autorelease];
+		t = [terms mutableCopy];
+		[t addObject:rt];
+		terms = t;
 	}
 	
-	[self checkRep()];
+	[self checkRep];
 	return self;
 }
 
@@ -88,11 +91,11 @@
   // EFFECTS: constructs a new polynomial using "ts" as part of the representation.
   //            the method does not make a copy of "ts". remember to call checkRep to check for representation invariant
 	
-	[self checkRep() ];
+	[self checkRep];
 	
-	[self terms] = ts;
+	terms = ts;
 	
-	[self checkRep()];
+	[self checkRep];
 	
 	return self;
 	
@@ -103,7 +106,7 @@
  // EFFECTS: returns the term associated with degree "deg". If no such term exists, return
  //            the zero RatTerm
 
-	if(self==nil && [self isNaN()])
+	if(self==nil && [self isNaN])
 		return nil;
 	
 	int i;
@@ -114,7 +117,7 @@
 		}
 	}
 	
-	return [[RatTerm alloc autorelease] initZERO()];
+	return [[[RatTerm alloc] initZERO]autorelease];
 }
 
 
@@ -123,11 +126,11 @@
  //  EFFECTS: returns YES if this RatPoly is NaN
  //             i.e. returns YES if and only if some coefficient = "NaN".
 
-	if(self==nil) return nil;
+	if(self==nil) return NO;
 	
-	int i; int t = [[self terms]count];
+	int i; 
 	for (i=0; i<[[self terms]count]; i++) {
-		if ([[[self terms]objectAtIndex:i] isNaN()]) {
+		if ([[[self terms]objectAtIndex:i] isNaN]) {
 			return YES;
 		}
 	}
@@ -144,14 +147,14 @@
 		return nil;
 	}
 	
-	NSArray *ts = [NSArray alloc autorelease];
+	NSMutableArray *ts = [[[NSMutableArray alloc] initWithArray:terms] autorelease];
 	
 	int i;
 	for (i=0; i<[[self terms]count]; i++) {
-		[ts objectAtIndex:i] = [[[self terms]objectAtIndex:i]negate];
+		[[ts objectAtIndex:i]negate];
 	}
 	
-	return [[RatPoly alloc autorelease]initWithTerms:ts];
+	return [[RatPoly alloc]initWithTerms:ts];
 }
 
 
@@ -160,6 +163,7 @@
   // REQUIRES: p!=nil, self != nil
   // EFFECTS: returns a RatPoly r, such that r=self+p; if [self isNaN] or [p isNaN], returns
   //            some r such that [r isNaN]
+	
 	if (self==nil && p==nil) {
 		return nil;
 	}
@@ -172,29 +176,43 @@
 				then replace tr in r with the sum of tp and tr 
 			else insert tp into r as a new term
 */
-	RatPoly *r = [[RatPoly alloc autorelease]initWithTerms:[self terms]];
+
+	NSMutableArray *tr = [[self terms]mutableCopy];
+	NSMutableArray *tp = [[p terms]mutableCopy];
 	
 	int i,j;
-	RatTerm *tr = [RatTerm alloc autorelease];
-	for (i=0; i<[[p terms]count]; i++) {
-		for (j=0; j<[[r terms]count]; j++) {
-			tr = [[r terms]objectAtIndex:j];
-			tp = [[p terms]objectAtIndex:i];
-			if([tp expt] == [tr expt])
+
+	for (i=0; i<[tp count]; i++)
+	{
+		for (j=0; j<[tr count]; j++) 
+		{
+			if([[tp objectAtIndex:i] expt] == [[tr objectAtIndex:j] expt])
 			{
-				
+			 	[tr replaceObjectAtIndex:j withObject:[[tr objectAtIndex:j] add:[tp objectAtIndex:i]]];
 			}
-						
+			else 
+			{
+				[tr addObject:[tp objectAtIndex:i]];
+			}
 		}
 	}
+	return [[[RatPoly alloc] initWithTerms:tr]autorelease];
 }
+
 
 // Subtraction operation
 -(RatPoly*)sub:(RatPoly*)p { // 5 points
   // REQUIRES: p!=nil, self != nil
   // EFFECTS: returns a RatPoly r, such that r=self-p; if [self isNaN] or [p isNaN], returns
   //            some r such that [r isNaN]
+	if (self==nil && p==nil) {
+		return nil;
+	}
 	
+	if([self isNaN] || [p isNaN])
+	{
+		return [[[RatPoly alloc]initWithTerm:[[[RatTerm alloc]initNaN]autorelease]]autorelease];
+	}
 	
 /*	r = p - q;	//r = p + (-q);
 	set r = -q by making a term-by-term copy of all terms in q to r (with the opposite sign)
@@ -203,6 +221,9 @@
 		then replace tr in r with the sum of tp and tr
 		else insert tp into r as a new term 
 */
+	p = [p negate];
+	
+	return [self add:p];
 	
 }
 
@@ -213,17 +234,77 @@
   // EFFECTS: returns a RatPoly r, such that r=self*p; if [self isNaN] or [p isNaN], returns
   // some r such that [r isNaN]
 	
+	
+	if (self==nil && p==nil) {
+		return nil;
+	}
+
+	if([self isNaN] || [p isNaN])
+	{
+		return [[[RatPoly alloc]initWithTerm:[[[RatTerm alloc]initNaN]autorelease]]autorelease];
+	}
+	
 /*
 	r = p * q;
 	foreach term, tp in p:
 	foreach term, tq in q:
 	multiply tp and tq and store in t
-	add the degree of tp and tq and store it as degree of t
 	if any term in r has the same degree as t,
 		then replace tr in r with the sum of t and tr
 		else insert t into r as a new term 
 */	
+	
+	NSMutableArray *tr = [[self terms]mutableCopy];
+	NSMutableArray *tp = [[p terms]mutableCopy];
+	
+	RatPoly *result = [[RatPoly alloc]autorelease];
+	NSMutableArray *res = [[NSMutableArray alloc] autorelease];
+	
+	int i,j,k;
+	int flag = 0;
+	RatTerm *t = [[RatTerm alloc] autorelease];
+	RatTerm *m = [[RatTerm alloc] autorelease];
+	
+	for (i=0; i<[tp count]; i++)
+	{
+		for (j=0; j<[tr count]; j++) 
+		{
+			t = [[tp objectAtIndex:i] mul:[tr objectAtIndex:j]];
+			
+			res = [[result terms]mutableCopy];
+			for (k=0; k<[[result terms]count]; k++) 
+			{
+				if ([[[result terms]objectAtIndex:k]expt] == [t expt]) 
+				{
+					flag=1;
+					m = [[result terms]objectAtIndex:k];
+					[res replaceObjectAtIndex:k withObject:[t add:m]];
+				}
+			}
+			
+			if (flag==1) 
+			{
+				flag = 0;
+				[res addObject:t];
+			}
+		}
+	}
+			
+	return [result initWithTerms:res];
+}
 
+
+-(RatTerm*)highestDegreeTerm {
+	
+	int i;
+	RatTerm *t;
+	
+	for (i=0; i<[[self terms]count]; i++) {
+		if ([self degree] == [[[self terms]objectAtIndex:i]expt]) {
+			t = [[[RatTerm alloc]initWithTerm:[[self terms]objectAtIndex:i]]autorelease];
+		}
+	}
+	return t;
 }
 
 
@@ -257,7 +338,7 @@
 	 div = highest degree term of u / highest degree term of v
 	 set i = v by making a term-by-term copy of all items in v to i
 	 foreach term, ti in i:
-	 ti = ti * div;
+		ti = ti * div;
 	 insert div into q as a new term
 	 u = u - i;
 	 
@@ -265,8 +346,37 @@
 	 return q;
 */	 
 	
+	//u == self
+	//v == p
 	
+	
+	RatTerm *div = [[RatTerm alloc] autorelease];
+	RatTerm *ti = [[RatTerm alloc] autorelease];
+		
+	NSMutableArray *tp = [[NSMutableArray alloc]autorelease];
+	tp = [[p terms]mutableCopy];
+	
+	NSMutableArray *s = [[NSMutableArray alloc]autorelease];
+	s = [[self terms]mutableCopy];
+	
+	
+	NSMutableArray *result = [[NSMutableArray alloc]autorelease];
+	int i;
+	while ([self degree] > [p degree]) 
+	{
+		div = [[self highestDegreeTerm]div:[p highestDegreeTerm]];
+		for (i = 0; i<[[p terms]count]; i++) {
+			ti = [[p terms]objectAtIndex:i];
+			[tp replaceObjectAtIndex:i withObject:[div mul:ti]];
+		}
+		[result addObject:div];
+		[self initWithTerms:[[self sub:p] terms]];
 	}
+	return [[[RatPoly alloc] initWithTerms:result]autorelease];
+	
+}
+
+
 
 -(double)eval:(double)d { // 5 points
   // REQUIRES: self != nil
