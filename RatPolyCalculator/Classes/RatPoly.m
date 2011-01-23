@@ -16,10 +16,6 @@
 		}
 	}
 	return max;
-	
-	//i'm just a skeleton here, do fill me up please, or
-	//I'll throw an exception to remind you of my existence. muahaha
-	//[NSException raise:@"RatPoly degree not implemented" format:@"fill me up plz!"];
 }
 
 // Check that the representation invariant is satisfied
@@ -49,10 +45,6 @@
 			}
 		}
 	}
-
-	//i'm just a skeleton here, do fill me up please, or
-	//I'll throw an exception to remind you of my existence. muahaha
-	//[NSException raise:@"RatPoly checkRep not implemented" format:@"fill me up plz!"];
 }
 
 -(id)init { // 5 points
@@ -67,7 +59,7 @@
   //  EFFECTS: constructs a new polynomial equal to rt. if rt's coefficient is zero, constructs
   //            a zero polynomial remember to call checkRep to check for representation invariant
 	if ([rt expt] < 0) {
-		[NSException raise:@"RatPoly exponent less than zero" format:@"Exponent must be non-negative"];
+		[NSException raise:@"RatPoly exponent less than zero" format:@"Exponent should be non-negative"];
 	}
 	
 	if([rt isZero])
@@ -75,7 +67,8 @@
 		return [self init];
 	}
 
-	else {
+	else 
+	{
 		NSArray *t = [NSArray arrayWithObject:rt];
 		return [self initWithTerms:t];
 	}
@@ -108,7 +101,6 @@
 			return [[self terms]objectAtIndex:i];
 		}
 	}
-	
 	return [[[RatTerm alloc] initWithCoeff:[RatNum initZERO] Exp:0]autorelease];
 }
 
@@ -137,7 +129,8 @@
  // EFFECTS: returns the additive inverse of this RatPoly.
  //            returns a RatPoly equal to "0 - self"; if [self isNaN], returns
  //            some r such that [r isNaN]
-	if (self==nil) {
+	if (self==nil) 
+	{
 		return nil;
 	}
 	
@@ -145,11 +138,8 @@
 	
 	int i;
 	for (i=0; i<[[self terms]count]; i++) {
-		
 		[ts replaceObjectAtIndex:i withObject:[[ts objectAtIndex:i]negate]];
-		//[[ts replaceObjectAtIndex:i]negate];
 	}
-	
 	return [[[RatPoly alloc]initWithTerms:ts]autorelease];
 }
 
@@ -160,12 +150,13 @@
   // EFFECTS: returns a RatPoly r, such that r=self+p; if [self isNaN] or [p isNaN], returns
   //            some r such that [r isNaN]
 	
-	if (self==nil && p==nil) {
+	if (self==nil && p==nil) 
+	{
 		return nil;
 	}
 	
-	if ([self isNaN] || [p isNaN]) {
-		//NSArray *t = [NSArray arrayWithObject:[RatTerm initNaN]];
+	if ([self isNaN] || [p isNaN]) 
+	{
 		return [[[RatPoly alloc]initWithTerm:[RatTerm initNaN]]autorelease];
 	}
 
@@ -190,8 +181,7 @@
 		{
 			RatTerm *curTerm = [((RatTerm*)[tp objectAtIndex:i]) add:[tr objectAtIndex:j]];
 			if (![curTerm isZero])
-			{	[result addObject:curTerm];
-			}
+				[result addObject:curTerm];
 			i++; j++;
 		}
 	}
@@ -227,14 +217,6 @@
 		return [[[RatPoly alloc]initWithTerm:[RatTerm initNaN]]autorelease];
 	}
 	
-/*	r = p - q;	//r = p + (-q);
-	set r = -q by making a term-by-term copy of all terms in q to r (with the opposite sign)
-	foreach term, tp, in p:
-	if any term tr in r has the same degree as tp,
-		then replace tr in r with the sum of tp and tr
-		else insert tp into r as a new term 
-*/
-	
 	return [self add:[p negate]];
 }
 
@@ -263,7 +245,7 @@
 	if any term in r has the same degree as t,
 		then replace tr in r with the sum of t and tr
 		else insert t into r as a new term 
-*/	
+*/
 	
 	NSMutableArray *tr = [[self terms]mutableCopy];
 	NSMutableArray *tp = [[p terms]mutableCopy];
@@ -303,7 +285,9 @@
 			}
 		}
 	}
-			
+	
+	[tr release];
+	[tp release];
 	return [result initWithTerms:res];
 }
 
@@ -362,6 +346,11 @@
 	
 	//u == self
 	//v == p
+	
+	if ([[p terms]count]==0) {
+		[NSException raise:@"Denominator cannot be zero" format : @"Divide by zero error"];
+
+	}
 	
 	RatTerm *div;
 	RatTerm *ti;
@@ -533,6 +522,9 @@ r = p - q;	//r = p + (-q);
 	then replace tr in r with the sum of tp and tr
 	else insert tp into r as a new term 
  
+ or rather r = p add (-q) //this is the implementation above
+ 
+ 
  Question 1(b)
 ========
 
@@ -569,9 +561,7 @@ Question 2(a)
  Moreover nil means 0 and if we use 0 in the function, which is not the intended purpose of the use case,
  we are violating the specification. nil is usually because of failure of initialization and we dont want to use a failed initialization.
  
- 
  Nothing happens when you send a message to nil. This fact is used in many places (as illustrated in the ObjC reference book)
-  
 
 Question 2(b)
 ========
@@ -582,7 +572,7 @@ Question 2(b)
  
  An instance method can also generate a RatNum from an input string, as an alternative.
  But it would make no sense to have an instance call that method and the method does not utilize the instance. 
- Memory would be allocated for this method for every instance.
+ Memory would be allocated for this method for every instance then.
  
 Question 2(c)
 ========
@@ -623,8 +613,7 @@ Question 3(b)
 
  The first thing to change would be the checkRep method. It would now not check the zero exponents according to the new 
  specification. 
-....
- ....
+ stringValue will also have to check for this.
  
 Question 3(c)
 ========
@@ -654,6 +643,6 @@ Question 5: Reflection (Bonus Question)
  
 (c) What could the CS3217 teaching staff have done better to improve your learning experience in this problem set?
 
-<Your answer here>
+ -
 
 */

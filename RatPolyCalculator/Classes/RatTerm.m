@@ -94,7 +94,7 @@
 	if ([self isNaN]) 
 		return [RatTerm initNaN];
 	
-	return [[RatTerm alloc]initWithCoeff:[[self coeff]negate] Exp:[self expt]];
+	return [[[RatTerm alloc]initWithCoeff:[[self coeff]negate] Exp:[self expt]]autorelease];
 }
 
 // Addition operation.

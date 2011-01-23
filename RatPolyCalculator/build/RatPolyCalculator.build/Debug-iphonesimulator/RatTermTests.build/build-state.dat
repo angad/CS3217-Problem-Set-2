@@ -39,8 +39,8 @@ s4508
 i<Foundation/Foundation.h>
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatNum.m
-c000000004D3974260000000000001BD6
-t1295610918
+c000000004D3BECC30000000000001BD6
+t1295772867
 s7126
 i"RatNum.h"
 
@@ -52,9 +52,9 @@ i<Foundation/Foundation.h>
 i"RatNum.h"
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m
-c000000004D3B996F0000000000002227
-t1295751535
-s8743
+c000000004D3BEC660000000000002234
+t1295772774
+s8756
 i"RatTerm.h"
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatTermTests.h
