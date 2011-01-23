@@ -66,7 +66,12 @@
   //  REQUIRES: [rt expt] >= 0
   //  EFFECTS: constructs a new polynomial equal to rt. if rt's coefficient is zero, constructs
   //            a zero polynomial remember to call checkRep to check for representation invariant
-	if ([rt expt] <=0) {
+	if ([rt expt] < 0) {
+		[NSException raise:@"RatPoly exponent less than zero" format:@"Exponent must be non-negative"];
+	}
+	
+	if([rt isZero])
+	{
 		return [self init];
 	}
 
@@ -104,7 +109,7 @@
 		}
 	}
 	
-	return [[[RatTerm alloc] initZERO]autorelease];
+	return [[[RatTerm alloc] initWithCoeff:[RatNum initZERO] Exp:0]autorelease];
 }
 
 
@@ -140,10 +145,12 @@
 	
 	int i;
 	for (i=0; i<[[self terms]count]; i++) {
-		[[ts objectAtIndex:i]negate];
+		
+		[ts replaceObjectAtIndex:i withObject:[[ts objectAtIndex:i]negate]];
+		//[[ts replaceObjectAtIndex:i]negate];
 	}
 	
-	return [[RatPoly alloc]initWithTerms:ts];
+	return [[[RatPoly alloc]initWithTerms:ts]autorelease];
 }
 
 
@@ -165,52 +172,44 @@
 	NSMutableArray *tr = [[self terms]mutableCopy];
 	NSMutableArray *tp = [[p terms]mutableCopy];
 	NSMutableArray *result = [NSMutableArray array]; //autoreleased
-	NSMutableArray *res = [NSMutableArray array];	//autoreleased
 	int i=0,j=0;
-	int k=0, l=0;
 	
-	//mergesorting
+	//mergesorting and adding same term terms
 	while (i<[tp count] && j<[tr count]) {
-		if([[tp objectAtIndex:i] expt] < [[tr objectAtIndex:j]expt])
+		if([[tp objectAtIndex:i] expt] > [[tr objectAtIndex:j]expt])
 		{
-			[result insertObject:[tp objectAtIndex:i] atIndex:k];
+			[result addObject:[tp objectAtIndex:i]];
 			i++;
 		}
-		else 
+		else if ([[tp objectAtIndex:i] expt] < [[tr objectAtIndex:j]expt])
 		{
-			[result insertObject:[tr objectAtIndex:j] atIndex:k];
+			[result addObject:[tr objectAtIndex:j]];
 			 j++;
 		}
-		k++;
+		else
+		{
+			RatTerm *curTerm = [((RatTerm*)[tp objectAtIndex:i]) add:[tr objectAtIndex:j]];
+			if (![curTerm isZero])
+			{	[result addObject:curTerm];
+			}
+			i++; j++;
+		}
 	}
 	
 	while (i<[tp count]) {
-		[result insertObject:[tp objectAtIndex:i] atIndex:k];
-		i++; k++;
+		[result addObject:[tp objectAtIndex:i]];
+		i++;
 	}
 	while (j<[tr count]) {
-		[result insertObject:[tr objectAtIndex:j] atIndex:k];
-		j++; k++;
-	}
-	
-	//adding same exponent terms
-	k=1;
-	while (k<[result count]){
-		if ([[result objectAtIndex:k]expt]==[[result objectAtIndex:k-1]expt]) {
-			[res insertObject:[[result objectAtIndex:k] add:[result objectAtIndex:k-1]] atIndex:l];
-			l++; k++;
-		}
-		else {
-			[res insertObject:[result objectAtIndex:k-1] atIndex:l];
-			l++; k++;
-		}
+		[result addObject:[tr objectAtIndex:j]];			
+		j++;
 	}
 	
 	//Releasing
 	[tr release];
 	[tp release];
 	
-	return [[[RatPoly alloc]initWithTerms:res] autorelease];
+	return [[[RatPoly alloc]initWithTerms:result] autorelease];
 }
 
 
@@ -235,9 +234,8 @@
 		then replace tr in r with the sum of tp and tr
 		else insert tp into r as a new term 
 */
-	p = [p negate];
 	
-	return [self add:p];
+	return [self add:[p negate]];
 }
 
 
@@ -254,7 +252,7 @@
 
 	if([self isNaN] || [p isNaN])
 	{
-		return [[[RatPoly alloc]initWithTerm:[[[RatTerm alloc]initNaN]autorelease]]autorelease];
+		return [[[RatPoly alloc]initWithTerm:[RatTerm initNaN]]autorelease];
 	}
 	
 /*
@@ -270,19 +268,20 @@
 	NSMutableArray *tr = [[self terms]mutableCopy];
 	NSMutableArray *tp = [[p terms]mutableCopy];
 	
-	RatPoly *result = [[RatPoly alloc]autorelease];
-	NSMutableArray *res = [[NSMutableArray alloc] autorelease];
+	RatPoly *result = [[[RatPoly alloc]init] autorelease];
+	NSMutableArray *res = [NSMutableArray array];
 	
 	int i,j,k;
 	int flag = 0;
-	RatTerm *t = [[RatTerm alloc] autorelease];
-	RatTerm *m = [[RatTerm alloc] autorelease];
+	RatTerm *t, *m;
 	
 	for (i=0; i<[tp count]; i++)
 	{
 		for (j=0; j<[tr count]; j++) 
 		{
-			t = [[tp objectAtIndex:i] mul:[tr objectAtIndex:j]];
+			t = [(RatTerm*)[tp objectAtIndex:i] mul:[tr objectAtIndex:j]];
+			
+			flag = 0;
 			
 			res = [[result terms]mutableCopy];
 			for (k=0; k<[[result terms]count]; k++) 
@@ -292,12 +291,14 @@
 					flag=1;
 					m = [[result terms]objectAtIndex:k];
 					[res replaceObjectAtIndex:k withObject:[t add:m]];
+				} else if ([[[result terms]objectAtIndex:k]expt] < [t expt]) {
+					flag=1;
+					[res insertObject:t atIndex:k-1];
 				}
 			}
 			
-			if (flag==1) 
+			if (!flag)
 			{
-				flag = 0;
 				[res addObject:t];
 			}
 		}
@@ -310,11 +311,11 @@
 -(RatTerm*)highestDegreeTerm {
 	
 	int i;
-	RatTerm *t;
+	RatTerm *t = [RatTerm initZERO];
 	
 	for (i=0; i<[[self terms]count]; i++) {
 		if ([self degree] == [[[self terms]objectAtIndex:i]expt]) {
-			t = [[[RatPoly alloc]initWithTerm:[[self terms]objectAtIndex:i]]autorelease];
+			t = [[self terms]objectAtIndex:i];
 		}
 	}
 	return t;
@@ -362,27 +363,32 @@
 	//u == self
 	//v == p
 	
+	RatTerm *div;
+	RatTerm *ti;
 	
-	RatTerm *div = [[RatTerm alloc] autorelease];
-	RatTerm *ti = [[RatTerm alloc] autorelease];
-		
 	NSMutableArray *tp = [[[p terms]mutableCopy]autorelease];
-	//NSMutableArray *s = [[[self terms]mutableCopy]autorelease];
-	
 	NSMutableArray *result = [NSMutableArray array];
+	
+	RatPoly *pp;
+	
 	int i;
-	while ([self degree] > [p degree]) 
+	while ([self degree]>=[p degree]) 
 	{
 		div = [[self highestDegreeTerm]div:[p highestDegreeTerm]];
-		for (i = 0; i<[[p terms]count]; i++) {
+		if ([div isZero]) {
+			break;
+		}
+		for (i=0; i<[[p terms]count]; i++) 
+		{
 			ti = [[p terms]objectAtIndex:i];
 			[tp replaceObjectAtIndex:i withObject:[div mul:ti]];
 		}
+		pp = [[RatPoly alloc]initWithTerms:tp];
 		[result addObject:div];
-		[self initWithTerms:[[self sub:p] terms]];
+		self = [self sub:pp];
 	}
-	return [[[RatPoly alloc] initWithTerms:result]autorelease];
 	
+	return [[[RatPoly alloc]initWithTerms:result]autorelease];
 }
 
 
@@ -433,12 +439,21 @@
 	if ([self isNaN]) {
 		return @"NaN";
 	}
+	
+	if([[self terms] count]==0)
+	{
+		return @"0";
+	}
 
-	NSMutableString *str = [[[NSMutableString alloc]stringByAppendingString:@""] autorelease];
+	NSMutableString *str = [NSMutableString string];
 	int i;
 	for(i=0; i<[[self terms]count]; i++)
 	{
-		[str appendFormat:@"%@", [[[self terms]objectAtIndex:i]stringValue]];
+		
+		if(i>0 && [[[[self terms]objectAtIndex:i]coeff]isPositive]) {
+			[str appendString:@"+"];
+		}
+		[str appendString:[[[self terms]objectAtIndex:i]stringValue]];
 	}
 		 return str;
 }
@@ -452,37 +467,31 @@
   // EFFECTS : return a RatPoly p such that [p stringValue] = str
 	
 	if ([str isEqual:@"0"]) {
-		return [[[RatPoly alloc]initZERO]autorelease];
+		return [[[RatPoly alloc]init]autorelease];
 	}
 	
 	int i;
 	RatTerm *t = [[RatTerm alloc]autorelease];
-	NSMutableArray *arr = [[NSMutableArray alloc]autorelease];
+	NSMutableArray *arr = [NSMutableArray array];
 	int j=0;
 	
-	NSString *sub = [[NSString alloc]autorelease];
+	NSString *sub = [NSString string];
 	
-	for (i=0; i<[str length]; i++) {
-		if ([str characterAtIndex:i]=='+' || [str characterAtIndex:i]=='-') {
-			sub = [str substringWithRange:NSMakeRange(j,i-1)];
+	for (i=1; i<[str length]; i++) {
+		if ([str characterAtIndex:i]=='+' || [str characterAtIndex:i]=='-') 
+		{
+			sub = [str substringWithRange:NSMakeRange(j,i-j)];
 			j=i;
-			if ([str characterAtIndex:i]=='-') {
-				t = [[RatTerm valueOf:sub]negate];
+			if ([str characterAtIndex:j]=='+') {
+				i++; j++;
 			}
-			else {
-				t = [RatTerm valueOf:sub];
-			}
+			t = [RatTerm valueOf:sub];
 			[arr addObject:t];
 		}
 	}
 	
-	sub = [str substringWithRange:NSMakeRange(j, [str length]-1)];
-	if ([str characterAtIndex:j]=='-') {
-	t = [[RatTerm valueOf:sub]negate];
-	}
-	else {
-		t = [RatTerm valueOf:sub];
-	}
+	sub = [str substringWithRange:NSMakeRange(j, [str length]-j)];
+	t = [RatTerm valueOf:sub];
 	[arr addObject:t];
 	
 	return [[[RatPoly alloc]initWithTerms:arr]autorelease];
@@ -605,38 +614,44 @@ Question 2(e)
 Question 3(a)
 ========
 
-I called checkRep in two constructors - initWith and initZero.
+I called checkRep only in the initWithTerms constructor (which was called by the other 2 constructors)
  Thats the only place where you need to check the representation invariant.
  The RatNum *coeff and expt are set as readonly and they do not have a setter.
  
 Question 3(b)
 ========
 
- The first thing to change would be the checkRep method. It would now not check the zero exponents thing according to the new 
+ The first thing to change would be the checkRep method. It would now not check the zero exponents according to the new 
  specification. 
- ....
+....
  ....
  
 Question 3(c)
 ========
 
- 
+ checkRep would now have to check for this representation invariant for the isNaN case.
+ Also the initNaN function would have to initWith Exp:0 
  
 Question 3(d)
 ========
-
-<Your answer here>
-
+ The first one [self.coeff isNaN]->expt=0 is preferable as it does not need to create an instance of RatNum initZERO.
+ It just checks the equality of 2 integers rather than checking isEqual for 2 objects - which might be more clean and efficient.
+ 
 Question 5: Reflection (Bonus Question)
 ==========================
 (a) How many hours did you spend on each problem of this problem set?
 
-<Your answer here>
-
+ Problem 1: Dont remember. 1 hr maybe.
+ 
+ Then wednesday night, I sat and implemented all the functions for RatTerm and RatPoly (without really compiling them and testing for errors)
+ This would be around 8-10 hrs.
+ Then on Saturday I started debugging for the test cases - took another ~10 hrs, ended on sunday afternoon.
+ 
 (b) In retrospect, what could you have done better to reduce the time you spent solving this problem set?
 
-<Your answer here>
-
+ Maybe should have compiled the code and removed the warnings while I was writing each and every function. But I guess it 
+ worked the other way too.
+ 
 (c) What could the CS3217 teaching staff have done better to improve your learning experience in this problem set?
 
 <Your answer here>

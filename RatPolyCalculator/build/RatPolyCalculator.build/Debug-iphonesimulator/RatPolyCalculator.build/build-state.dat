@@ -1,7 +1,7 @@
 TRatPolyCalculator
 v7
 r0
-t317413443.075795
+t317444456.003552
 cCheck dependencies
 cProcessInfoPlistFile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/Info.plist RatPolyCalculator-Info.plist
 cCompileXIB /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/MainWindow.xib
@@ -67,9 +67,9 @@ i<Foundation/Foundation.h>
 i"RatTerm.h"
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m
-c000000004D3B2076000000000000466E
-t1295720566
-s18030
+c000000004D3B9D900000000000004969
+t1295752592
+s18793
 i"RatPoly.h"
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorAppDelegate.h
@@ -106,9 +106,9 @@ i<Foundation/Foundation.h>
 i"RatNum.h"
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m
-c000000004D3AB8480000000000002255
-t1295693896
-s8789
+c000000004D3B996F0000000000002227
+t1295751535
+s8743
 i"RatTerm.h"
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/MainWindow.xib
@@ -129,11 +129,11 @@ i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app
-t1295720643
+t1295751539
 s238
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app.dSYM
-t1295720643
+t1295751539
 s102
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/Info.plist
@@ -149,7 +149,7 @@ t1295450207
 s8
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator
-t1295720643
+t1295751539
 s52172
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculatorViewController.nib
@@ -161,8 +161,8 @@ t1295706753
 s24284
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPoly.o
-t1295720643
-s33296
+t1295751470
+s33180
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculator.LinkFileList
 c000000004D36FC0F000000000000042B
@@ -178,8 +178,8 @@ t1295706753
 s46392
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatTerm.o
-t1295706753
-s27856
+t1295751539
+s27824
 
 N/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/main.o
 t1295706753
@@ -202,7 +202,7 @@ s1189
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies317413442#317413442#0(0"0(0#1#0"8614182752#0"0#
+lSLF07#2@18"Check dependencies317444456#317444456#0(0"0(0#1#0"8615021888#0"0#
 
 CCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatNum.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatNum.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s317399553.685327
@@ -218,8 +218,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@89"Compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatNum.m317399553#317399553#0(0"0(0#0#81"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatNum.m8598503968#2419"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -include /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatNum.m -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatNum.o0#
 
 CCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPoly.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s317413442.968429
-e317413443.037703
+s317444270.610629
+e317444270.683371
 r1
 xCompileC
 xbuild/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPoly.o
@@ -228,9 +228,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly mul:]':
-o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:285: warning: incompatible Objective-C types assigning 'struct RatNum *', expected 'struct RatTerm *'
-lSLF07#2@90"Compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317413442#317413443#0(300"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m: In function '-[RatPoly mul:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m:285: warning: incompatible Objective-C types assigning 'struct RatNum *', expected 'struct RatTerm *'1(22@87"Incompatible Objective-C types assigning 'struct RatNum *', expected 'struct RatTerm *'317413443#115#185#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317413366#285#0#285#0#58"incompatible Objective-C types assigning '*', expected '*'0(0#0#82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m8615170400#2421"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -include /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPoly.o0#
+lSLF07#2@90"Compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m317444270#317444270#0(0"0(0#0#82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m8604445344#2421"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -include /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPoly.m -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPoly.o0#
 
 CCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculatorAppDelegate.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s317399553.683961
@@ -259,8 +257,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@114"Compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorViewController.m317399553#317399553#0(0"0(0#0#106"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorViewController.m8604853760#2469"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -include /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatPolyCalculatorViewController.m -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculatorViewController.o0#
 
 CCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatTerm.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s317399553.819853
-e317399553.889409
+s317444339.567459
+e317444339.634963
 r1
 xCompileC
 xbuild/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatTerm.o
@@ -269,11 +267,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm add:]':
-o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:120: warning: control reaches end of non-void function
-o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm isEqual:]':
-o/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:271: warning: return makes integer from pointer without a cast
-lSLF07#2@90"Compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m317399553#317399553#0(518"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm add:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:120: warning: control reaches end of non-void function/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m: In function '-[RatTerm isEqual:]':/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m:271: warning: return makes integer from pointer without a cast2(22@40"Control reaches end of non-void function317399553#115#138#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m317386696#120#0#120#0#40"control reaches end of non-void function0(22@48"Return makes integer from pointer without a cast317399553#372#146#0(6@82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m317386696#271#0#271#0#0"0(0#0#82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m8604815840#2421"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -include /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatTerm.o0#
+lSLF07#2@90"Compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m317444339#317444339#0(0"0(0#0#82"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m8614862624#2421"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -include /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/Classes/RatTerm.m -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatTerm.o0#
 
 CCompileC build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/main.o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s317399553.683191
@@ -308,23 +302,23 @@ oCouldn't open shared capabilities memory GSCapabilities (No such file or direct
 lSLF07#2@46"CompileXIB RatPolyCalculatorViewController.xib317141903#317141903#0(327"2011-01-19 22:58:23.763 Interface Builder Cocoa Touch Tool[950:1903] CFPreferences: user home directory at file://localhost/Users/u0909118-m/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#100"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculatorViewController.xib8618056032#700"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculatorViewController.nib /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculatorViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CGenerateDSYMFile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app.dSYM /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator
-s317413443.058707
-e317413443.073341
+s317444339.656285
+e317444339.670006
 r1
 xGenerateDSYMFile
 x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app.dSYM
 x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator
-lSLF07#2@139"GenerateDSYMFile build/Debug-iphonesimulator/RatPolyCalculator.app.dSYM build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator317413443#317413443#0(0"0(0#0#132"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator8623104256#491"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app.dSYM0#
+lSLF07#2@139"GenerateDSYMFile build/Debug-iphonesimulator/RatPolyCalculator.app.dSYM build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator317444339#317444339#0(0"0(0#0#132"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator8621943712#491"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app.dSYM0#
 
 CLd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator normal i386
-s317413443.037776
-e317413443.058616
+s317444339.635024
+e317444339.656211
 r1
 xLd
 x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator
 xnormal
 xi386
-lSLF07#2@137"Link /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator317413443#317413443#0(0"0(0#0#0"8625812736#1080"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -filelist /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculator.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator0#
+lSLF07#2@137"Link /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator317444339#317444339#0(0"0(0#0#0"8622574656#1080"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -filelist /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/Objects-normal/i386/RatPolyCalculator.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/RatPolyCalculator0#
 
 CProcessInfoPlistFile /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app/Info.plist RatPolyCalculator-Info.plist
 s317143007.669714
@@ -349,10 +343,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@39"Precompile RatPolyCalculator_Prefix.pch317399552#317399553#0(0"0(0#0#93"/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculator_Prefix.pch5791473468841225216#2263"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-generated-files.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-own-target-headers.hmap -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-all-target-headers.hmap -iquote /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/RatPolyCalculator-project-headers.hmap -F/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/include -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources/i386 -I/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/RatPolyCalculator.build/Debug-iphonesimulator/RatPolyCalculator.build/DerivedSources -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/RatPolyCalculator_Prefix.pch -o /var/folders/jh/jhYX4d7+FzulmC1YUULQx1vN6lc/-Caches-/com.apple.Xcode.1054417690/SharedPrecompiledHeaders/RatPolyCalculator_Prefix-cdlqjngcjdsndjesudgwnbycluye/RatPolyCalculator_Prefix.pch.gch0#
 
 CTouch /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app
-s317413443.073405
-e317413443.075770
+s317444339.670066
+e317444339.672402
 r1
 xTouch
 x/Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app
-lSLF07#2@120"Touch /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app317413443#317413443#0(0"0(0#0#0"8623071040#340"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app0#
+lSLF07#2@120"Touch /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app317444339#317444339#0(0"0(0#0#0"8621799808#340"    cd /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/u0909118-m/Desktop/CS3217-Problem-Set-2/RatPolyCalculator/build/Debug-iphonesimulator/RatPolyCalculator.app0#
 

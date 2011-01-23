@@ -114,9 +114,8 @@
 	{
 		[NSException raise:@"different expenents" format:@"Argument exponents not equal"];
 	}
-	else
-	{		return [[[RatTerm alloc] initWithCoeff:[[self coeff] add:[arg coeff]] Exp:[self expt]] autorelease];
-	}
+	
+	return [[[RatTerm alloc] initWithCoeff:[[self coeff] add:[arg coeff]] Exp:[self expt]] autorelease];
 }
 
 // Subtraction operation.
@@ -265,12 +264,7 @@
 	if ([self isNaN] && [obj isNaN]) {
 		return YES;
 	}
-	
-	if(self==nil)
-	{
-		return nil;
-	}
-	
+		
 	if([[self coeff] isEqual: [obj coeff]] && [self expt] == [obj expt])
 		return YES;
 	else return NO;
